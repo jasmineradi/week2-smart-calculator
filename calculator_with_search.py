@@ -4,7 +4,6 @@
 
 import operator
 
-
 class SmartCalculator:
     """
     A calculator that can solve simple equations using search
@@ -184,7 +183,12 @@ def main():
             print("A*: Uses heuristics to search more efficiently")
 
         elif choice == '5':
-            print("\nThanks for using Smart Calculator!")
+            confirm = input("\nAre you sure you want to exit? (y/n): ").strip().lower()
+            if confirm == 'y':
+                print("\nThanks for using Smart Calculator!")
+                break
+            else:
+                print("\nReturning to menu...")
             break
 
 
