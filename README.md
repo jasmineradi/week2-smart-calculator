@@ -23,3 +23,18 @@ The Smart Calculator works by letting you perform normal math or solve for an un
 
 ## What I Learned About Search
 I learned that Brute Force Search, Depth-First Search, A* are all smart algorithms that look for the best path forward. Additionally, I learned that search algorithms are a way for computers to find answers by exploring varying possibilities step-by-step. In this assignment, I learned that (especially for this assignment) Brute-force search tries every possible value until it finds one that works and makes the equation true. Overall, computers use BFS, A* and DFS to find the best possible solutions to equations using differing techniques. BFS looks for the shortest path but will use more memory, while DFS explores one specific path as deeply as possible before it will back up, and lastly A* will try to find not only the best but fastest path to the goal.
+
+## How the Code Works
+The main file, `calculator_with_search.py`, contains a `SmartCalculator` class that organizes all the calculator’s functions.  
+
+- The `__init__` method sets up a dictionary of math operations (`+`, `-`, `*`, `/`, `^`) so they can be easily called.  
+
+- The `basic_calculate()` method performs normal math by looking up the correct operation from that dictionary.  
+
+- The `solve_for_x()` method uses a **brute-force search** to test many possible values of `x` until the equation becomes true. It includes protection for divide-by-zero errors and rounds the answer neatly.  
+
+- The `equation_solver_menu()` function interacts with the user, asking for input (the equation, operation, known number, and side of x) and displays the final answer.  
+
+- The `visualize_search()` function shows how the search algorithm checks different `x` values before finding the best one.  
+
+- Finally, the `main()` loop runs the menu so the user can choose between basic calculation, solving equations, or learning about search algorithms.
