@@ -99,7 +99,7 @@ class SmartCalculator:
         # Clean display: show an integer if it’s effectively an integer
         if abs(result - round(result)) < 1e-6: #this works by checking if the difference between result and its rounded value is very small
             result = int(round(result))
-        print(f"\n✅ Solution found: x = {result}")
+        print(f"\n\033[92m✅ Solution found: x = {result}\033[0m")
 
     def visualize_search(self, target, operation, known_value, x_position='left'): #this function visualizes the search process by showing step by step calculations
         """
