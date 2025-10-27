@@ -31,7 +31,7 @@ The main file, `calculator_with_search.py`, contains a `SmartCalculator` class t
 
 - The `basic_calculate()` method performs normal math by looking up the correct operation from that dictionary.  
 
-- The `solve_for_x()` method uses a **brute-force search** to test many possible values of `x` until the equation becomes true. It includes protection for divide-by-zero errors and rounds the answer neatly.  
+- The `solve_for_x()` method uses a brute-force search to test many possible values of `x` until the equation becomes true. It includes protection for divide-by-zero errors and rounds the answer neatly.  
 
 - The `equation_solver_menu()` function interacts with the user, asking for input (the equation, operation, known number, and side of x) and displays the final answer.  
 
