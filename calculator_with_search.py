@@ -151,6 +151,10 @@ def main():
 
         choice = input("\nChoose Option (1-5): ")
 
+        if choice not in ['1', '2', '3', '4', '5']:
+            print("\nInvalid choice. Please enter a number between 1 and 5.")
+            continue
+
         if choice == '1':
             num1 = float(input("Enter first number: "))
             op = input("Enter operation (+, -, *, /, ^): ")
@@ -189,7 +193,7 @@ def main():
                 break
             else:
                 print("\nReturning to menu...")
-            break
+                continue
 
 
 if __name__ == "__main__":
