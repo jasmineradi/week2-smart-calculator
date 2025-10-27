@@ -3,7 +3,6 @@
 # Uses search concepts from Chapter 3
 
 import operator
-import math
 
 
 class SmartCalculator:
